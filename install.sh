@@ -92,7 +92,10 @@ git submodule update --init
 echo "Installing Vim Plugins..."
 # install vim scripts
 vim +PluginInstall +qall 
-
-echo "Installing fonts...\n"
+#check OS for font cache updates
+if [[ $(uname) == !linux ]];then 
 /usr/X11R6/bin/fc-cache -v
+else
+/usr/bin/fc-cache -v
+fi
 xset fp rehash
