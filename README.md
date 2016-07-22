@@ -27,5 +27,6 @@ pcmanfm (file manager)
 cadaver (dav CLI client)
 git (of course!)
 expect (automated CLI tool for in-program interaction)
-ksh
+ksh (for awesome scripting goodness)
+ctag (dependancy of gutentags vim vundle)
 NOTE: Make sure you have a full color term if you are planning on using 256-color stuff!
